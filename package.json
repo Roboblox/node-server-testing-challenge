@@ -1,5 +1,5 @@
 {
-  "name": "node-server-testing-guided",
+  "name": "node-server-testing",
   "version": "1.0.0",
   "description": "Starter Code for Node Server Testing Module",
   "main": "index.js",

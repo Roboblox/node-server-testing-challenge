@@ -11,7 +11,7 @@ module.exports = {
 async function insert(hobbit) {
   // 2- implement the code that makes the test pass
   const [id] = await db("users").insert(hobbit);
-  return db("hobbits").where({ id }).first();
+  return db("users").where({ id }).first();
 }
 
 async function update(id, changes) {
