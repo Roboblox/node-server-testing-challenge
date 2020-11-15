@@ -1,6 +1,6 @@
 const express = require("express");
 
-const Hobbits = require("../hobbits/hobbitsModel.js");
+const Users = require("../users/usersModel.js");
 
 const server = express();
 
@@ -12,9 +12,9 @@ server.get("/", (req, res) => {
 
 server.get("/users", (req, res) => {
   // endpoint with supertest
-  Hobbits.getAll() // db helpers jest
-    .then((hobbits) => {
-      res.status(200).json(hobbits);
+  Users.getAll() // db helpers jest
+    .then((users) => {
+      res.status(200).json(users);
     })
     .catch((error) => {
       res.status(500).json(error);
